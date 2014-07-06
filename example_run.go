@@ -1,4 +1,6 @@
-import eperf
+package eperf_test
+
+import "eperf"
 
 func ExampleRun() {
   perftest := eperf.New("code test", 1000)  //Create a new Perftest
