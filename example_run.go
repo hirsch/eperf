@@ -1,5 +1,4 @@
-package eperf_test
-
+package eperf_run
 import "eperf"
 
 func ExampleRun() {
