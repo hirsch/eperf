@@ -34,10 +34,9 @@ func (p *Perftest) Run() bool {
 		if p.round > 1 {
 			log.Println("eperf:", p.name, "runtime:", p.min)
 			return false
-		} else {
-			log.Println("eperf:", p.name, "no cycles!")
-			return false
 		}
+		log.Println("eperf:", p.name, "no cycles!")
+		return false
 	}
 	run := time.Since(p.last)
 	if run < p.min || p.round == 0 {
