@@ -18,8 +18,7 @@ type Perftest struct {
 // New creates a new Perftest with a given name and the number of times
 // (cycles > 0) the program part will be executed.
 func New(name string, cycles int) *Perftest {
-	p := &Perftest{name: name, cycles: cycles, round: 0}
-	return p
+	return &Perftest{name: name, cycles: cycles, round: 0}
 }
 
 // Run runs the given Perftest. Use within a for loop.
